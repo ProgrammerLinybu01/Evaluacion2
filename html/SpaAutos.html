@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗 Car Washing Center 🚗</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="/imagenes/LOGOpaj.png.png" alt="Logo" class="logo" class="d-inline-block align-text-top"><h5 class="titulo">Campus TravelExp</h5>
+        
+        <button class="cuadro" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a id="inicio" class="navegacionLink" class="nav-link active" aria-current="page" href="/index.html">Home🏠</a>
+      </li>
+      <li class="nav-item">
+        <a id="clientes" class="navegacionLink" class="nav-link active" href="/html/ClientesAutos.html">Clientes📑</a>
+      </li>
+      <li class="nav-item">
+        <a id="spa" class="navegacionLink" class="nav-link active" href="/html/SpaAutos.html">SPA✨</a>
+      </li>
+      <li class="nav-item">
+        <a id="Compra" class="navegacionLink" class="nav-link active" href="/html/CompraAutos.html">Compra💰</a>
+      </li>
+      <li class="nav-item">
+        <a id="puntos" class="navegacionLink" class="nav-link active" href="/html/puntosAutos.html">Puntos📍</a>
+      </li>
+  </div>
+    </div>
+</nav>
+
+  <!-- IMG -->
+  <div class="container">
+    <img src="../imagenes/lavado.jpg" class="img-fluid" alt="...">
+  </div>
+
+  <!-- Titlo -->
+  <div class="container">
+    <h1 class="text-center custom-header">Datos Del Cliente</h1>
+  </div>
+
+  <!-- botones y formulario -->
+  <div class="d-flex justify-content-center">
+
+    <!-- registrar -->
+    <button id="botonesPj" class="regis gesBtn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSPA" data-bs-whatever="@mdo">Datos del Cliente</button>
+
+    <!-- formulario -->
+    <div class="modal fade" id="exampleModalSPA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Datos Del Cliente 📑</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="SpaForm" class="was-validated">
+              <div class="mb-4">
+                <label for="inputPassword" class="form-label">Nombre del servicio</label>
+                <input type="text" class="form-control is-valid" id="NombreServicio" required>
+                <div class="invalid-feedback">invalid Nombre</div>
+              </div>
+              <div class="mb-4">
+                <label for="inputPassword" class="form-label">Valor Servicio</label>
+                <input type="text" class="form-control is-valid" id="inputPassword" pattern="^[0-9]+$" inputmode="numeric" oninput="validarNumeros(this)" required>
+                <div class="invalid-feedback">invalid Valor</div>
+              </div>
+              <div class="mb-4">
+                <label for="inputPassword" class="form-label">Descripción</label>
+                <input type="text" class="form-control is-valid" id="inputPassword" required>
+                <div class="invalid-feedback">invalid Descripción</div>
+              </div>
+              <div class="mb-4">
+                <label for="inputPassword" class="form-label">Puntos para fidelización</label>
+                <input type="text" class="form-control is-valid" id="inputPassword" pattern="^[0-9]+$" inputmode="numeric" oninput="validarNumeros(this)" required>
+                <div class="invalid-feedback">invalid Puntos</div>
+              </div>
+              <div class="col-12">
+                <button class="formBotons" id="agregarCliente" class="btn btn-primary" type="submit">Registrar Auto</button><br><br>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form action="" id="busqueda">
+    <input type="text" name="valorBusqueda" id="inputBuscar" class="form-control" placeholder="🔎 Ingrese el nombre que desea buscar 🔍">
+    <button class="buscar" type="button" name="buscar">Buscar 🔍</button>
+  </form>
+
+<!-- tabla -->
+<div class="tabla-contenedor">
+  <table id="tbodySpa" class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre del servicio</th>
+        <th scope="col">Valor Servicio</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Puntos para fidelización</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="/js/SpaAutos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

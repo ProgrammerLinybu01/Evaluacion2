@@ -1,0 +1,201 @@
+body{
+    background-image: url(https://img.freepik.com/fotos-premium/coche-que-calle-algunas-luces-parte-trasera-ia-generativa_97167-6356.jpg?w=2000);
+}
+.logo {
+    background-color: #bccaff;
+    width: 60px;
+    height: 53px;
+    border-radius: 15px;
+}
+.container-fluid{
+    background: #740d78;
+}
+.titulo{
+    color: #bccaff;
+    margin-left: 10px;
+    margin-top: 7px;
+    text-align: center;
+}
+.navegacionLink:hover{
+    color: #ff7dcf;
+}
+.navegacionLink{
+    color: #bccaff;
+    text-decoration: none;
+    margin-left: 10PX;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 17px;
+}
+.cuadro:hover{
+    background: #fbb1f0;
+}
+.cuadro{
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    background: #d5c6ff;
+    border-radius: 15px;
+}
+
+.img3{
+    height: 160px;
+}
+.img1{
+    height: 262px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+  
+.card {
+    flex: 0 0 auto;
+    width: 18rem;
+    margin-right: 20px;
+}
+
+.text-center{
+    text-align: center!important;
+    background: #d5c6ff;
+    color: #740d78;
+}
+.gesBtn:hover{
+    background-color: #d5c6ff;
+    color: #740d78;
+}
+.gesBtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10PX;
+    margin-top: 50PX;
+    margin-bottom: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #740d78;
+    color: #d5c6ff;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: #e10efd;
+    border-style: solid;
+    border-width: 3px;
+    color: #49095c;
+    font-family: cursive;
+    text-align: center;
+}
+.formBotons:hover{
+    color: #7000ff;
+    background: #92d1ff;
+    border-color: #7000ff;
+}
+.formBotons{
+    color: #00fff5;
+    background: #0062ab;
+    display: block;
+    margin: 0 auto;
+    width: 444px;
+    height: 40px;
+    border-color: #00ffff;
+    border-radius: 20px;
+}
+h2{
+    color: #d099ff;
+}
+.col-form-label {
+    padding-top: calc(0.375rem + var(--bs-border-width));
+    padding-bottom: calc(0.375rem + var(--bs-border-width));
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    color: #ffccee;
+}
+.pagar {
+    border-radius: 19px;
+    height: 47px;
+    width: 70px;
+    background: #e6c7ff;
+    color: #ac00ff;
+}
+.finName{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #ffe2e2;
+    font-size: larger;
+}
+.submit:hover{
+    color: #dfa9ff;
+    background: #5f136e;
+    border-color: #dfa9ff;
+}  
+.submit{
+    color: #5f136e;
+    background: #dfa9ff;
+    border-style: ridge;
+    border-color: #940eb6;
+    border-radius: 20px;
+    font-size: larger;
+}
+#busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 193px;
+    margin-right: 193px;
+}
+.buscar:hover{
+    background: #d000ff;
+    color: #c0a8f5;
+}
+.buscar {
+    background: #c0a8f5;
+    color: #d000ff;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+#inputBuscar{
+    text-align: center;
+    background: #dfc0ff;
+    color: #5a34ad;
+    border-radius: 10px;
+}
+@media (max-width: 900px) {
+    body{
+        background-image: url("/imagenes/image.jpg");
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     
+    }
+    .card{
+         margin-top: 10px;
+    }
+    .d-flex {
+        display: flex!important;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tabla-contenedor {
+        margin-right: 19px;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    .finName{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: #e0c3f5;
+        font-size: larger;
+    }
+} 
+/* 1920 x 1080 */
